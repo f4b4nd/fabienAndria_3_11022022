@@ -22,4 +22,8 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+img {
+  max-width: 600px;
+}
 /*# sourceMappingURL=index.css.map */
