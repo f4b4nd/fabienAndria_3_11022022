@@ -62,17 +62,18 @@
     }
 
     .cards {
-        row-gap: 10px;
+        row-gap: 20px;
+        justify-content: center;
     }
 
 }
 
 .card-howitworks {
-
     align-items: center;
     column-gap: 20px;
 
     min-height: 80px;
+    max-width: 500px;
     padding: 1em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -115,6 +116,59 @@
     }
 }
 
+.restaurants {
+    
+    background-color: $lightgrey2;
+    padding: 1em;
+
+    .restaurants__title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        row-gap: 20px;
+    }
+}
+
 .card-restaurant {
     flex-direction: column;
+    flex-wrap: wrap;
+
+    height: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    .card__image {
+        flex-basis: 75%;
+    }
+
+    .card__body {
+        flex: 1;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 1.5em;
+    }
+
+    .card__title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    .fa-heart {
+        font-size: 30px;
+        &:hover {
+            color: $pink;
+        }
+    }
+
 }

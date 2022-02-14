@@ -143,10 +143,6 @@ html {
           flex-direction: column;
 }
 
-.cards .card {
-  max-width: 600px;
-}
-
 .restaurants {
   padding: 10px;
 }
@@ -216,7 +212,10 @@ html {
 }
 
 .howitworks .cards {
-  row-gap: 10px;
+  row-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-howitworks {
@@ -226,6 +225,7 @@ html {
   -webkit-column-gap: 20px;
           column-gap: 20px;
   min-height: 80px;
+  max-width: 500px;
   padding: 1em;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -273,11 +273,69 @@ html {
   color: #9356DC;
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 1em;
+}
+
+.restaurants .restaurants__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.restaurants .cards {
+  row-gap: 20px;
+}
+
 .card-restaurant {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-restaurant .card__image {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.card-restaurant .card__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 1.5em;
+}
+
+.card-restaurant .card__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-restaurant .card__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.card-restaurant .fa-heart {
+  font-size: 30px;
+}
+
+.card-restaurant .fa-heart:hover {
+  color: #FF79DA;
 }
 
 .restaurant-menu {
