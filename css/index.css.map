@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "partials/_constants.scss"
     ],
     "names": [],
     "file": "index.css"
