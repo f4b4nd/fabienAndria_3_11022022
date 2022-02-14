@@ -1,0 +1,28 @@
+.restaurant-menu {
+
+    padding: 15px;
+
+}
+
+.card-menu {
+    flex-wrap: wrap;
+
+    &:hover {
+        .card__validation {
+            display: block;
+        }
+
+        .card__price {
+            display: none;
+        }
+    }
+
+    .col:first-child {
+        flex-basis: 80%;
+    }
+
+    .card__validation { 
+        display: none;
+    }
+
+}
