@@ -1,18 +1,11 @@
 .cards {
     
-    $debug-cards-flexdirection: column;
-    $debug-card-maxwidth: 600px;
-
     display: flex;
-    
-    flex-direction: $debug-cards-flexdirection;
 
     .card {    
         
         display: flex;
         overflow: hidden;
-
-        max-width: $debug-card-maxwidth;
 
         img {
             width: 100%;
@@ -21,4 +14,9 @@
         }
     }
 
+}
+
+
+.card-restaurant {
+    flex-direction: column;
 }

@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    padding: 1.5em;
+
+    background-color: $dark;
+    font-size: 17px;
+
+    .footer__title {
+        font-size: 25px;
+        font-family: 'Shrikhand';
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    a {
+        font-weight: 400;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}

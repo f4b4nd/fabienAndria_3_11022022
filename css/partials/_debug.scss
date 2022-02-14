@@ -1,0 +1,16 @@
+html {
+    border: 1px solid grey;
+    margin: auto;
+    max-width: 600px;
+}
+
+.cards {
+
+    flex-direction: column;
+
+    .card {
+        max-width: 600px;
+    }
+
+}
+
