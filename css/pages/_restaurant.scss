@@ -4,7 +4,8 @@
 
     .cards {
         row-gap: 20px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         border: 1px solid black;
     }
 
@@ -13,8 +14,7 @@
 .card-menu {
 
     //flex-wrap: wrap;
-
-    max-width: 400px;
+    width: 90%;
     height: 100px;
     justify-content: center;
     border-radius: 15px;
@@ -40,7 +40,6 @@
         text-overflow: ellipsis;
         overflow: hidden; 
         white-space: nowrap;
-
     }
 
     .card__price {
@@ -58,14 +57,13 @@
         }
 
         &:last-child {
-            flex-basis: 35%;
+            flex-basis: 45%;
 
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
         }
     }
-
 
     .card__validation { 
         display: none;
@@ -86,4 +84,5 @@
             display: flex;
         }
     }
+    
 }
