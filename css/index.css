@@ -71,11 +71,13 @@ header .fa-arrow-left {
 }
 
 header .logo {
-  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Shrikhand';
 }
 
-header .logo img {
-  width: 20em;
+header .logo a:hover {
+  text-decoration: none;
 }
 
 .card-howitworks {
@@ -274,7 +276,7 @@ footer {
 }
 
 footer .footer__title {
-  font-size: 25px;
+  font-size: 1.8em;
   font-family: 'Shrikhand';
 }
 
