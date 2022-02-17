@@ -71,7 +71,7 @@ header .fa-arrow-left {
 }
 
 header .logo {
-  text-align: center;
+  margin: auto;
   font-size: 3em;
   font-family: 'Shrikhand';
 }
