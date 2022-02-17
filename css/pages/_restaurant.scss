@@ -17,6 +17,19 @@
         row-gap: 1.5em;
     }
 
+    h3 {
+        font-size: 1.5em;
+        text-transform: uppercase;
+
+        &::after {
+            display: block;
+            content: '';
+            height: 10px;
+            width: 60px;
+            border-bottom: 5px solid $turquoise;
+        }
+    }
+
 }
 
 .restaurant-top-image {

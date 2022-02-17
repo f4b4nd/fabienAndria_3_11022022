@@ -374,6 +374,19 @@ footer a:hover {
   row-gap: 1.5em;
 }
 
+.restaurant-menu h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.restaurant-menu h3::after {
+  display: block;
+  content: '';
+  height: 10px;
+  width: 60px;
+  border-bottom: 5px solid #99E2D0;
+}
+
 .restaurant-top-image img {
   position: relative;
   z-index: -1;
