@@ -1,12 +1,17 @@
+// BREAKPOINTS
+$largescreen-minwidth : 992px;
+$mediumscreen-minwidth : 768px;
+$mediumscreen-maxwidth : $largescreen-minwidth - 1px;
+$smallscreen-maxwidth : 2000px;
 
 
+// COLORS
 $pink : #FF79DA ;
 
 $violet : #9356DC ;
 $lightviolet : #f5edff;
 
 $turquoise : #99E2D0 ;
-
 
 $grey : #e3e3e3 ;
 $lightgrey : #f3f3f3;

@@ -8,14 +8,16 @@ h1 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 button {
   padding: 1em;
   border-radius: 20px;
-  border: none;
   color: white;
+  cursor: pointer;
+  font-weight: bold;
   background: linear-gradient(0deg, #9356dc 13%, #ff79da 92%);
 }
 
@@ -44,6 +46,10 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+button {
+  border: none;
 }
 
 header {
@@ -89,6 +95,12 @@ header .logo img {
   object-fit: cover;
 }
 
+@media screen and (max-width: 2000px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -114,16 +126,6 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
-
-html {
-  border: 1px solid grey;
-  margin: auto;
-  max-width: 600px;
-}
-
-.cards {
-  flex-direction: column;
 }
 
 .restaurants {
@@ -286,60 +288,61 @@ html {
 }
 
 .restaurant-menu {
-  padding: 15px;
+  display: flex;
+  row-gap: 1em;
+  margin-top: -50px;
+  z-index: 1;
+  padding: 1em;
+  background-color: #f3f3f3;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .restaurant-menu .cards {
-  row-gap: 20px;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  row-gap: 1.5em;
+}
+
+.restaurant-top-image img {
+  position: relative;
+  z-index: -1;
+}
+
+.restaurant-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__validation {
+  align-self: center;
 }
 
 .card-menu {
-  width: 90%;
+  width: 100%;
   height: 100px;
   justify-content: center;
   border-radius: 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
   overflow: hidden;
-}
-
-.card-menu .card__title {
-  padding-top: 1em;
-  padding-left: 1em;
-  font-size: 20px;
-  font-weight: bold;
-  text-overflow: ellipsis;
-}
-
-.card-menu .card__subtitle {
-  padding-left: 1em;
-  padding-bottom: 1em;
-  font-size: 17px;
-  font-weight: 300;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.card-menu .card__price {
-  padding-right: 1em;
-  padding-bottom: 1em;
-  font-weight: bold;
 }
 
 .card-menu .col {
-  border: 1px solid black;
+  display: flex;
 }
 
 .card-menu .col:first-child {
-  flex: 1;
+  flex-basis: 80%;
+  margin-left: 1em;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.2em;
 }
 
 .card-menu .col:last-child {
-  flex-basis: 45%;
-  display: flex;
+  flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
 }
@@ -358,6 +361,44 @@ html {
   font-size: 25px;
 }
 
+.card-menu .col:first-child {
+  overflow: hidden;
+}
+
+.card-menu .col:first-child .card__title, .card-menu .col:first-child .card__subtitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-menu .card__title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-menu .card__subtitle {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.card-menu .card__price {
+  padding-right: 1em;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
 .card-menu:hover .card__validation {
   display: flex;
+}
+
+@media screen and (max-width: 2000px) {
+  .restaurant-menu {
+    flex-direction: column;
+  }
+}
+
+html {
+  border: 1px solid grey;
+  margin: auto;
+  max-width: 600px;
 }

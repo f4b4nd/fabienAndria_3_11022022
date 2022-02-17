@@ -6,7 +6,12 @@
 @import 'partials/cards' ;
 @import 'partials/footer';
 
-@import 'partials/debug' ;
-
 @import 'pages/home';
 @import 'pages/restaurant';
+
+
+html {
+    border: 1px solid grey;
+    margin: auto;
+    max-width: 600px;
+}
