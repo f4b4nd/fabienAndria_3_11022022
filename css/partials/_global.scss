@@ -13,11 +13,12 @@ img {
     height: 100%;
 }
 
-button {
+button.btn-explore, button.btn-validation {
     padding: 1em;
     border-radius: 20px;
     color: white;
     cursor: pointer;
     font-weight: bold;
     background: linear-gradient(0deg, rgba(147,86,220,1) 13%, rgba(255,121,218,1) 92%);
+    font-size: 1em;
 }

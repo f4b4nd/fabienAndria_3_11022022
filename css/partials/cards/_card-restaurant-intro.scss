@@ -1,0 +1,39 @@
+.card-restaurant-intro {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    height: $home__card__restaurant-height;
+
+    overflow: hidden;
+
+    .card__image {
+        flex-basis: 75%;
+    }
+
+    .card__body {
+        flex: 1;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 1.5em;
+    }
+
+    .card__title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .card__subtitle {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .fa-heart {
+        font-size: 1.8em;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+}

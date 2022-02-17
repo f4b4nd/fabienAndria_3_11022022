@@ -1,0 +1,53 @@
+.card-howitworks {
+
+    align-items: center;
+    column-gap: 20px;
+
+    height: $home__card__howitworks-height;
+    padding: 1em;
+    
+    & {
+        position: relative;
+
+        .card__number {
+            position: absolute;
+            left: -15px;    
+        }
+    }
+
+    .card__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: $home__card__number-size ;
+        height: $home__card__number-size ;
+        border-radius: 50px;
+
+        font-size: 1.1em;
+        font-weight: bold;
+        color: white;
+        background-color: $violet;
+    }
+
+    .card__icon {
+        margin-left: 0.8em;
+        font-size: 1.9em;
+        color: $dark;
+    }
+
+    .card__text {
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+
+    &:hover {
+
+        background-color: $lightviolet;
+
+        .card__icon {
+            color: $violet;
+        }
+    }
+    
+}
