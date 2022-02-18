@@ -1,3 +1,13 @@
+
+.restaurant__top-image {
+
+    img {
+        position: relative;
+        z-index: -1;
+    }
+
+}
+
 .restaurant-menu {
 
     display: flex;
@@ -30,27 +40,20 @@
         }
     }
 
-}
-
-.restaurant-top-image {
-
-    img {
-        position: relative;
-        z-index: -1;
+    .restaurant-menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .restaurant-menu__like-icon {
+            font-size: 1.8em;
+        }
     }
 
-}
 
-.restaurant-menu__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .restaurant-menu__like-icon {
-        font-size: 1.8em;
+    .restaurant-menu__validation {
+        margin: 1em;
+        align-self: center;
     }
-}
 
-.button__validation {
-    align-self: center;
 }
