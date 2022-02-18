@@ -18,10 +18,19 @@ button.btn-explore, button.btn-validation {
 
 button.btn-like {
     background-color: transparent;
-    transition: color .1s;
-    
+    transition: color 1s;
+    transform: color;
+    transform-origin: bottom;
+
     &:hover {
         color: $pink;
+    }
+
+    .inner {
+        color: red;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
 }
