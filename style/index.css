@@ -227,15 +227,16 @@ header .logo a:hover {
   justify-content: flex-end;
   align-items: flex-end;
   font-weight: bold;
+  font-size: 1em;
 }
 
 .card-restaurant-menu .card__validation {
+  justify-content: center;
+  align-items: center;
   display: none;
   height: 100%;
   min-width: 60px;
   background-color: #99E2D0;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-restaurant-menu .card__validation .fa-circle-check {
@@ -247,11 +248,11 @@ header .logo a:hover {
   display: flex;
 }
 
-.card-restaurant-menu .col:first-child {
+.card-restaurant-menu .card__text {
   overflow: hidden;
 }
 
-.card-restaurant-menu .col:first-child .card__title, .card-restaurant-menu .col:first-child .card__subtitle {
+.card-restaurant-menu .card__text .card__title, .card-restaurant-menu .card__text .card__subtitle {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

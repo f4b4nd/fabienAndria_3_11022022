@@ -10,7 +10,7 @@
         padding: 1em 1.5em;
         
         flex: 1;
-
+        
         .card__text {
             flex-basis: 80%;
             display: flex;
@@ -35,17 +35,19 @@
             justify-content: flex-end;
             align-items: flex-end;
             font-weight: bold;
+            font-size: 1em;
         }
 
     }
 
     .card__validation { 
+        justify-content: center;
+        align-items: center;
+
         display: none;
         height: 100%;
         min-width: 60px;
         background-color: $turquoise;
-        justify-content: center;
-        align-items: center;
 
         .fa-circle-check {
             color: white;
@@ -62,7 +64,7 @@
 
 
     // text-overflow with 3 dots
-    .col:first-child {
+    .card__text {
         overflow: hidden; 
 
         .card__title, .card__subtitle {
