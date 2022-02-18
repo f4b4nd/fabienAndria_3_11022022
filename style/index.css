@@ -20,6 +20,11 @@ button.btn-explore, button.btn-validation {
   font-weight: bold;
   background: linear-gradient(0deg, #9356dc 13%, #ff79da 92%);
   font-size: 1em;
+  transition: .3s;
+}
+
+button.btn-explore:hover, button.btn-validation:hover {
+  opacity: 0.7;
 }
 
 /*RESET*/
@@ -187,42 +192,59 @@ header .logo a:hover {
 
 .card-restaurant-menu {
   width: 100%;
-  height: 120px;
+  height: 5em;
   justify-content: center;
   background-color: white;
   overflow: hidden;
 }
 
-.card-restaurant-menu .col {
+.card-restaurant-menu .card__body {
   display: flex;
-}
-
-.card-restaurant-menu .col:first-child {
-  flex-basis: 80%;
-  margin-left: 1em;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 0.2em;
-}
-
-.card-restaurant-menu .col:last-child {
+  padding: 1em 1.5em;
   flex: 1;
-  align-items: flex-end;
+}
+
+.card-restaurant-menu .card__body .card__text {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-restaurant-menu .card__body .card__text .card__title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-restaurant-menu .card__body .card__text .card__subtitle {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.card-restaurant-menu .card__body .card__price {
+  flex: 1;
+  display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bold;
 }
 
 .card-restaurant-menu .card__validation {
   display: none;
+  height: 100%;
   min-width: 60px;
   background-color: #99E2D0;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
 .card-restaurant-menu .card__validation .fa-circle-check {
   color: white;
-  font-size: 25px;
+  font-size: 1.5em;
+}
+
+.card-restaurant-menu:hover .card__validation {
+  display: flex;
 }
 
 .card-restaurant-menu .col:first-child {
@@ -233,26 +255,6 @@ header .logo a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.card-restaurant-menu .card__title {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.card-restaurant-menu .card__subtitle {
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.card-restaurant-menu .card__price {
-  padding-right: 1em;
-  padding-bottom: 1em;
-  font-weight: bold;
-}
-
-.card-restaurant-menu:hover .card__validation {
-  display: flex;
 }
 
 @media screen and (max-width: 2000px) {
