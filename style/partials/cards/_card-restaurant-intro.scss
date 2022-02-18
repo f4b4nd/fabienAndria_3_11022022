@@ -6,6 +6,21 @@
 
     overflow: hidden;
 
+    position: relative;
+
+    .card__alert {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+
+        padding: .5em .8em;
+        border-radius: 3px;
+        background-color: $turquoise;
+        color: $green;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
     .card__image {
         flex-basis: 75%;
     }
