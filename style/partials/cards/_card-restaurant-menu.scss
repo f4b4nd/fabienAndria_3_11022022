@@ -4,6 +4,7 @@
     justify-content: center;
     background-color: white;
     overflow: hidden;
+    position: relative;
 
     .card__body {
         display: flex;
@@ -41,13 +42,15 @@
     }
 
     .card__validation { 
+        display: flex;
         justify-content: center;
         align-items: center;
 
-        display: none;
         height: 100%;
-        min-width: 60px;
+        width: 0;
         background-color: $turquoise;
+
+        transition: width 1s ease-in-out;
 
         .fa-circle-check {
             color: white;
@@ -58,7 +61,8 @@
 
     &:hover {
         .card__validation {
-            display: flex;
+            visibility: visible;
+            width: 15%;
         }
     }
 

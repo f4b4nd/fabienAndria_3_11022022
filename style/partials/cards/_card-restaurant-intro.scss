@@ -31,6 +31,7 @@
         display: flex;
         justify-content: space-between;
         padding: 1em 1.5em;
+        background-color: white;
     }
 
     .card__title {
@@ -45,10 +46,6 @@
 
     .fa-heart {
         font-size: 1.8em;
-
-        &:hover {
-            color: $pink;
-        }
     }
 
 }
