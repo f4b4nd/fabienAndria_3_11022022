@@ -11,6 +11,10 @@
 .restaurant-menu {
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     row-gap: .5em;
 
     margin-top: -50px;
@@ -40,7 +44,7 @@
         }
     }
 
-    .restaurant-menu__header {
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -55,7 +59,7 @@
     }
 
 
-    .restaurant-menu__validation {
+    &__validation {
         margin: 1em;
         align-self: center;
     }
@@ -63,7 +67,13 @@
 }
 
 @media screen and (max-width: $smallscreen-maxwidth) {
+
     .restaurant-menu {
-        flex-direction: column;
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }                
     }
 }
