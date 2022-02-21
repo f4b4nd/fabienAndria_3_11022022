@@ -28,6 +28,16 @@
     background-color:$lightgrey2;
     padding: 1em 3em;
 
+    h1 {
+        font-family: 'Roboto';
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
 }
 
 
@@ -57,3 +67,4 @@
     font-weight: bold;
     margin-bottom: 1em;
 }
+
