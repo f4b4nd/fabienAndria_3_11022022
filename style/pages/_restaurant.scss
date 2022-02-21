@@ -66,6 +66,30 @@
 
 }
 
+
+@keyframes displayWithDelay {
+    0% { opacity: 0; width: 35%;}
+    100% { opacity: 1;  width: 100%;}
+}
+
+@mixin delayedDisplay($delay: 0.5s) {
+    animation: displayWithDelay $delay forwards;
+}
+
+.restaurant-menu .cards .card {
+
+    &:first-child {
+        @include delayedDisplay(2s);
+    }
+    &:nth-child(2n) {
+        @include delayedDisplay(3s);
+    }
+    &:last-child {
+        @include delayedDisplay(4s);
+    }
+}
+
+
 @media screen and (max-width: $smallscreen-maxwidth) {
 
     .restaurant-menu {

@@ -104,6 +104,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 10px;
   padding: 1.5em;
   background-color: #353535;
@@ -284,6 +287,30 @@ button.btn-like:hover {
   font-size: 1.8em;
 }
 
+@-webkit-keyframes displayWithDelay {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes displayWithDelay {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .card-restaurant-menu {
   width: 100%;
   height: 5em;
@@ -293,6 +320,8 @@ button.btn-like:hover {
   background-color: white;
   overflow: hidden;
   position: relative;
+  -webkit-animation: displayWithDelay 1s forwards;
+          animation: displayWithDelay 1s forwards;
 }
 
 .card-restaurant-menu .card__body {
@@ -419,8 +448,8 @@ button.btn-like:hover {
 }
 
 .loading {
-  -webkit-animation: hideLoading 3s forwards;
-          animation: hideLoading 3s forwards;
+  -webkit-animation: hideLoading 1s forwards;
+          animation: hideLoading 1s forwards;
   background-color: white;
   opacity: 0.9;
   position: fixed;
@@ -652,6 +681,32 @@ button.btn-like:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@keyframes displayWithDelay {
+  0% {
+    opacity: 0;
+    width: 35%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.restaurant-menu .cards .card:first-child {
+  -webkit-animation: displayWithDelay 2s forwards;
+          animation: displayWithDelay 2s forwards;
+}
+
+.restaurant-menu .cards .card:nth-child(2n) {
+  -webkit-animation: displayWithDelay 3s forwards;
+          animation: displayWithDelay 3s forwards;
+}
+
+.restaurant-menu .cards .card:last-child {
+  -webkit-animation: displayWithDelay 4s forwards;
+          animation: displayWithDelay 4s forwards;
 }
 
 @media screen and (max-width: 2000px) {
