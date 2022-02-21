@@ -12,6 +12,21 @@ img {
   height: 100%;
 }
 
+h1, h2 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
 /*RESET*/
 html, body {
   margin: 0;
@@ -377,15 +392,6 @@ button.btn-like .inner {
   overflow: hidden;
 }
 
-@media screen and (max-width: 2000px) {
-  .restaurant-menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,21 +464,6 @@ button.btn-like .inner {
   text-align: center;
   background-color: #f6f6f6;
   padding: 1em 3em;
-}
-
-.presentation h1, .presentation h2 {
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-.presentation h1 {
-  font-family: 'Roboto';
-  font-size: 1.8em;
-}
-
-.presentation h2 {
-  font-size: 1.5em;
-  font-weight: 100;
 }
 
 .howitworks {
@@ -568,6 +559,15 @@ button.btn-like .inner {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media screen and (max-width: 2000px) {
+  .restaurant-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 html {
