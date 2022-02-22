@@ -349,22 +349,21 @@ button.btn-like:hover {
           justify-content: center;
   background-color: white;
   overflow: hidden;
-  position: relative;
+  padding-left: 1em;
 }
 
 .card-restaurant-menu .card__body {
+  overflow: hidden;
+  padding: 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  border: 1px solid red;
 }
 
 .card-restaurant-menu .card__body .card__text {
-  border: 1px solid black;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -378,6 +377,9 @@ button.btn-like:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .card-restaurant-menu .card__body .card__text .card__title {
@@ -391,8 +393,8 @@ button.btn-like:hover {
 }
 
 .card-restaurant-menu .card__body .card__price {
-  width: 40px;
-  border: 1px solid black;
+  width: 20%;
+  padding-right: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,6 +420,8 @@ button.btn-like:hover {
           align-items: center;
   height: 100%;
   background-color: #99E2D0;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 
 .card-restaurant-menu .card__validation .fa-circle-check {
@@ -430,11 +434,14 @@ button.btn-like:hover {
 }
 
 .card-restaurant-menu:hover .card__validation {
-  width: 50px;
+  width: 20%;
 }
 
 .card-restaurant-menu .card__text {
   overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-restaurant-menu .card__text .card__title, .card-restaurant-menu .card__text .card__subtitle {
