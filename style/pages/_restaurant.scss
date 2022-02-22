@@ -33,7 +33,7 @@
 
     .cards {
         flex-direction: column;
-        align-items: center;
+        //align-items: center;
         row-gap: 1.5em;
     }
 
@@ -73,15 +73,6 @@
 }
 
 
-@keyframes displayWithDelay {
-    0% { opacity: 0; width: 35%;}
-    100% { opacity: 1;  width: 100%;}
-}
-
-@mixin delayedDisplay($delay: 0.5s) {
-    animation: displayWithDelay $delay forwards;
-}
-
 .restaurant-menu .cards .card {
 
     &:first-child {
@@ -99,6 +90,10 @@
 @media screen and (max-width: $sm-maxwidth) {
 
     .restaurant-menu {
+
+        .cards {
+            flex-direction: column;
+        }
 
         &__content {
             display: flex;

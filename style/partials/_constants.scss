@@ -20,11 +20,13 @@ $lightgrey2: #f6f6f6;
 
 $dark : #353535 ;
 
-// HOME PAGE 
-$home__card__number-size : 40px;
-$home__card__howitworks-height : 6em;
-$home__card__restaurant-height : 20em;
-$home__card__restaurant__body-height : 5em;
+// HOWITWORKS 
+$howitworks__card-height : 6em;
+$howitworks__card__number-size : 40px;
 
-// RESTAURANT PAGE 
-$restaurant__card-menu-height : 5em;
+// RESTAURANT INTRO
+$restaurant-intro__card-height : 20em;
+$restaurant-intro__card__body-height : 5em;
+
+// RESTAURANT MENU
+$restaurant-menu__card-height : 5em;

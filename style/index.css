@@ -105,6 +105,17 @@ h1, h2 {
   }
 }
 
+@keyframes displayWithDelay {
+  0% {
+    opacity: 0;
+    width: 35%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,15 +468,6 @@ button.btn-like:hover {
      object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
-  .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .loading {
   -webkit-animation: hideLoading 0s forwards;
           animation: hideLoading 0s forwards;
@@ -542,39 +544,40 @@ button.btn-like:hover {
 
 .howitworks .cards {
   row-gap: 2em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (min-width: 992px) {
   .howitworks .cards {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .howitworks .card {
-    -ms-flex-preferred-size: 32%;
-        flex-basis: 32%;
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .howitworks .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .howitworks .card {
-    -ms-flex-preferred-size: 32%;
-        flex-basis: 32%;
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .howitworks .card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    width: 100%;
+  .howitworks .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -607,6 +610,15 @@ button.btn-like:hover {
   .restaurants .card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .restaurants .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -654,9 +666,6 @@ button.btn-like:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   row-gap: 1.5em;
 }
 
@@ -700,17 +709,6 @@ button.btn-like:hover {
       align-self: center;
 }
 
-@keyframes displayWithDelay {
-  0% {
-    opacity: 0;
-    width: 35%;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-  }
-}
-
 .restaurant-menu .cards .card:first-child {
   -webkit-animation: displayWithDelay 2s forwards;
           animation: displayWithDelay 2s forwards;
@@ -727,6 +725,12 @@ button.btn-like:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .restaurant-menu .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .restaurant-menu__content {
     display: -webkit-box;
     display: -ms-flexbox;
