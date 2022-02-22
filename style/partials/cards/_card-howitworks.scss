@@ -4,8 +4,10 @@
     column-gap: 1.2em;
 
     height: $home__card__howitworks-height;
+    //max-width: 500px;
     padding: 1em;
     
+    // positioning number icon
     & {
         position: relative;
 

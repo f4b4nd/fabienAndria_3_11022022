@@ -27,7 +27,7 @@
 }
 
 
-@media screen and (max-width: $smallscreen-maxwidth) {
+@media screen and (max-width: $sm-maxwidth) {
     .cards {
         flex-direction: column;
     }

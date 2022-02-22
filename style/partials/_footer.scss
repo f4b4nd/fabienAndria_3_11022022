@@ -1,15 +1,14 @@
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
+    row-gap: 0.5em;
 
-    padding: 1.5em;
+    padding: 1.5em 2em;
     background-color: $dark;
-    font-size: 17px;
+    font-size: 1em;
 
     .footer__title {
-        font-size: 1.8em;
+        font-size: 2.5em;
         font-family: 'Shrikhand';
 
         a:hover {

@@ -1,7 +1,7 @@
 .card-restaurant-intro {
     flex-direction: column;
     flex-wrap: wrap;
-
+    
     height: $home__card__restaurant-height;
 
     overflow: hidden;
@@ -22,15 +22,16 @@
     }
 
     .card__image {
-        flex-basis: 75%;
+        flex: 1;
     }
 
     .card__body {
-        flex: 1;
+        height: $home__card__restaurant__body-height;
 
         display: flex;
         justify-content: space-between;
-        padding: 1em 1.5em;
+        align-items: center;
+        padding: 1em;
         background-color: white;
     }
 

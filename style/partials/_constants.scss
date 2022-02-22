@@ -1,8 +1,8 @@
 // BREAKPOINTS
-$largescreen-minwidth : 992px;
-$mediumscreen-minwidth : 768px;
-$mediumscreen-maxwidth : $largescreen-minwidth - 1px;
-$smallscreen-maxwidth : 2000px;
+$lg-minwidth : 992px;
+$md-maxwidth : $lg-minwidth - 1px;
+$md-minwidth : 768px;
+$sm-maxwidth : $md-minwidth - 1px;
 
 
 // COLORS
@@ -22,8 +22,9 @@ $dark : #353535 ;
 
 // HOME PAGE 
 $home__card__number-size : 40px;
-$home__card__howitworks-height: 6em;
-$home__card__restaurant-height: 20em;
+$home__card__howitworks-height : 6em;
+$home__card__restaurant-height : 20em;
+$home__card__restaurant__body-height : 80px;
 
 // RESTAURANT PAGE 
 $restaurant__card-menu-height : 5em;

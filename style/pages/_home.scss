@@ -43,11 +43,16 @@
 
 .howitworks {
 
-    padding: 1em 2em;
-
+    padding: 2em 2em;
+    
     .cards {
         row-gap: 1em;
         justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1;
     }
 
 }
@@ -55,7 +60,7 @@
 .restaurants {
 
     background-color: $lightgrey2;
-    padding: 1em;
+    padding: 2em 1em;
 
     .cards {
         flex-direction: row;
@@ -71,18 +76,32 @@
     margin-bottom: 1em;
 }
 
-@media screen and (min-width: $mediumscreen-minwidth) {
+
+@media screen and (min-width: $lg-minwidth) {
 
     .howitworks {
+
         .cards {
             flex-direction: row;
             justify-content: space-evenly;
             gap: 1.5em;
         }
+
         .card {
-            flex:1;
+            flex: 1;
+        }
+
+    }
+
+    .restaurants {
+
+        .card {
+            flex-basis: 23%;
         }
     }
+}
+
+@media screen and (min-width: $md-minwidth) and (max-width: $md-maxwidth) {
 
     .restaurants {
         .card {

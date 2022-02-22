@@ -1,6 +1,12 @@
 
 .restaurant__top-image {
 
+    .image-wrapper {
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+
     img {
         position: relative;
         z-index: -1;
@@ -90,7 +96,7 @@
 }
 
 
-@media screen and (max-width: $smallscreen-maxwidth) {
+@media screen and (max-width: $sm-maxwidth) {
 
     .restaurant-menu {
 
