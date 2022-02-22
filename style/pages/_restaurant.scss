@@ -1,8 +1,7 @@
-
 .restaurant__top-image {
 
     .image-wrapper {
-        max-height: 500px;
+        max-height: 400px;
         overflow: hidden;
     }
 
@@ -14,28 +13,33 @@
 
 }
 
+/*
+.restaurant-menu .cards .card {
+
+    &:first-child {
+        @include delayedDisplay(2s);
+    }
+    &:nth-child(2n) {
+        @include delayedDisplay(3s);
+    }
+    &:last-child {
+        @include delayedDisplay(4s);
+    }
+}
+*/
+
 .restaurant-menu {
+    margin-top: -50px;
+    z-index: 1;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    row-gap: .5em;
-
-    margin-top: -50px;
-    z-index: 1;
+    row-gap: 1em;
 
     padding: 1em;
     background-color: $lightgrey;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
-    .cards {
-        flex-direction: column;
-        //align-items: center;
-        row-gap: 1.5em;
-    }
 
     h3 {
         font-size: 1.5em;
@@ -55,50 +59,70 @@
         justify-content: space-between;
         align-items: center;
         
-        h1, button {
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        button {
             margin: 0;
         }
 
         .fa-heart {
-            font-size: 1.8em;
+            font-size: 3em;
         }
     }
-
 
     &__validation {
         margin: 1em;
         align-self: center;
     }
 
+    // LARGE + MEDIUM
+    @media screen and (min-width: $md-minwidth) {
+        padding: 1em 2.5em;
+    }
+
 }
 
+.restaurant-menu__content {
 
-.restaurant-menu .cards .card {
+    display: flex;
 
-    &:first-child {
-        @include delayedDisplay(2s);
+    .cards {
+        flex-direction: column;
+        row-gap: 2em;
     }
-    &:nth-child(2n) {
-        @include delayedDisplay(3s);
+
+    // LARGE
+    @media screen and (min-width: $lg-minwidth) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .menu-container {
+            width: 32%;
+        }
+
+        .cards {
+            width: 100%;
+        }
+
     }
-    &:last-child {
-        @include delayedDisplay(4s);
-    }
-}
 
+    // SMALL + MEDIUM
+    @media screen and (max-width: $md-maxwidth) {
 
-@media screen and (max-width: $sm-maxwidth) {
+        flex-direction: column;
 
-    .restaurant-menu {
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+        }
 
         .cards {
             flex-direction: column;
         }
 
-        &__content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }                
     }
+
 }

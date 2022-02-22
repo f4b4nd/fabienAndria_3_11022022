@@ -1,24 +1,27 @@
 .card-restaurant-menu {
-    //width: 100%;
+
+    //@include delayedDisplay(1s);    
+
     height: $restaurant-menu__card-height ;
     justify-content: center;
     background-color: white;
+
     overflow: hidden;
     position: relative;
-
-    @include delayedDisplay(1s);    
-
+    
     .card__body {
         display: flex;
-        padding: 1em 1.5em;
-        
+        padding: 1em 0;
         flex: 1;
+        border: 1px solid red;
         
         .card__text {
-            flex-basis: 80%;
+            border: 1px solid black;
+            
+            flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
         
             .card__title {
                 font-size: 1.2em;
@@ -33,7 +36,8 @@
         }
 
         .card__price {
-            flex: 1;
+            width: 40px;
+            border: 1px solid black;
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
@@ -49,10 +53,9 @@
         align-items: center;
 
         height: 100%;
-        width: 0;
         background-color: $turquoise;
 
-        transition: width 1s ease-in-out;
+        //transition: width 1s ease-in-out;
 
         .fa-circle-check {
             color: white;
@@ -61,12 +64,16 @@
 
     }
 
-    &:hover {
+    // animation
+    & {
         .card__validation {
-            width: 15%;
+            width: 0;
+        }
+        &:hover .card__validation {
+            width: 50px;        
         }
     }
-
+  
 
     // text-overflow with 3 dots
     .card__text {
