@@ -14,11 +14,11 @@
     100% { opacity: 0; z-index: -1; }
 }
 
-@keyframes displayWithDelay {
+@keyframes widthGrowingDisplay {
     0% { opacity: 0; width: 35%;}
     100% { opacity: 1;  width: 100%;}
 }
 
-@mixin delayedDisplay($delay: 0.5s) {
-    animation: displayWithDelay $delay forwards;
+@mixin widthGrowingAnimation($delay: 0.5s) {
+    animation: widthGrowingDisplay $delay forwards;
 }

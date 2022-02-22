@@ -5,28 +5,12 @@
         overflow: hidden;
     }
 
-
     img {
         position: relative;
         z-index: -1;
     }
 
 }
-
-/*
-.restaurant-menu .cards .card {
-
-    &:first-child {
-        @include delayedDisplay(2s);
-    }
-    &:nth-child(2n) {
-        @include delayedDisplay(3s);
-    }
-    &:last-child {
-        @include delayedDisplay(4s);
-    }
-}
-*/
 
 .restaurant-menu {
     margin-top: -50px;
@@ -92,6 +76,17 @@
     .cards {
         flex-direction: column;
         row-gap: 2em;
+    }
+
+    // animation : width growing
+    .card:first-child {
+        @include widthGrowingAnimation(2s);
+    }
+    .card:nth-child(2) {
+        @include widthGrowingAnimation(3s);
+    }
+    .card:last-child {
+        @include widthGrowingAnimation(4s);
     }
 
     // LARGE

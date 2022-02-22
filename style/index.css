@@ -105,7 +105,18 @@ h1, h2 {
   }
 }
 
-@keyframes displayWithDelay {
+@-webkit-keyframes widthGrowingDisplay {
+  0% {
+    opacity: 0;
+    width: 35%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes widthGrowingDisplay {
   0% {
     opacity: 0;
     width: 35%;
@@ -354,7 +365,7 @@ button.btn-like:hover {
 
 .card-restaurant-menu .card__body {
   overflow: hidden;
-  padding: 1em 0;
+  padding: 1.5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,12 +385,9 @@ button.btn-like:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-restaurant-menu .card__body .card__text .card__title {
@@ -395,6 +403,7 @@ button.btn-like:hover {
 .card-restaurant-menu .card__body .card__price {
   width: 20%;
   padding-right: 1em;
+  padding-left: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,14 +443,11 @@ button.btn-like:hover {
 }
 
 .card-restaurant-menu:hover .card__validation {
-  width: 20%;
+  width: 15%;
 }
 
 .card-restaurant-menu .card__text {
   overflow: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .card-restaurant-menu .card__text .card__title, .card-restaurant-menu .card__text .card__subtitle {
@@ -646,20 +652,6 @@ button.btn-like:hover {
   z-index: -1;
 }
 
-/*
-.restaurant-menu .cards .card {
-
-    &:first-child {
-        @include delayedDisplay(2s);
-    }
-    &:nth-child(2n) {
-        @include delayedDisplay(3s);
-    }
-    &:last-child {
-        @include delayedDisplay(4s);
-    }
-}
-*/
 .restaurant-menu {
   margin-top: -50px;
   z-index: 1;
@@ -740,6 +732,21 @@ button.btn-like:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 2em;
+}
+
+.restaurant-menu__content .card:first-child {
+  -webkit-animation: widthGrowingDisplay 2s forwards;
+          animation: widthGrowingDisplay 2s forwards;
+}
+
+.restaurant-menu__content .card:nth-child(2) {
+  -webkit-animation: widthGrowingDisplay 3s forwards;
+          animation: widthGrowingDisplay 3s forwards;
+}
+
+.restaurant-menu__content .card:last-child {
+  -webkit-animation: widthGrowingDisplay 4s forwards;
+          animation: widthGrowingDisplay 4s forwards;
 }
 
 @media screen and (min-width: 992px) {
