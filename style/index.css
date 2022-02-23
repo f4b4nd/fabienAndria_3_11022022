@@ -446,6 +446,26 @@ button.btn-like:hover {
   width: 15%;
 }
 
+.card-restaurant-menu:first-child {
+  -webkit-animation: widthGrowingDisplay 2s forwards;
+          animation: widthGrowingDisplay 2s forwards;
+}
+
+.card-restaurant-menu:nth-child(2n) {
+  -webkit-animation: widthGrowingDisplay 3s forwards;
+          animation: widthGrowingDisplay 3s forwards;
+}
+
+.card-restaurant-menu:nth-child(3) {
+  -webkit-animation: widthGrowingDisplay 4s forwards;
+          animation: widthGrowingDisplay 4s forwards;
+}
+
+.card-restaurant-menu:nth-child(4) {
+  -webkit-animation: widthGrowingDisplay 5s forwards;
+          animation: widthGrowingDisplay 5s forwards;
+}
+
 .card-restaurant-menu .card__text {
   overflow: hidden;
 }
@@ -732,21 +752,6 @@ button.btn-like:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 2em;
-}
-
-.restaurant-menu__content .card:first-child {
-  -webkit-animation: widthGrowingDisplay 2s forwards;
-          animation: widthGrowingDisplay 2s forwards;
-}
-
-.restaurant-menu__content .card:nth-child(2) {
-  -webkit-animation: widthGrowingDisplay 3s forwards;
-          animation: widthGrowingDisplay 3s forwards;
-}
-
-.restaurant-menu__content .card:last-child {
-  -webkit-animation: widthGrowingDisplay 4s forwards;
-          animation: widthGrowingDisplay 4s forwards;
 }
 
 @media screen and (min-width: 992px) {

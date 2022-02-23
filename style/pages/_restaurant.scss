@@ -78,16 +78,6 @@
         row-gap: 2em;
     }
 
-    // animation : width growing
-    .card:first-child {
-        @include widthGrowingAnimation(2s);
-    }
-    .card:nth-child(2) {
-        @include widthGrowingAnimation(3s);
-    }
-    .card:last-child {
-        @include widthGrowingAnimation(4s);
-    }
 
     // LARGE
     @media screen and (min-width: $lg-minwidth) {
