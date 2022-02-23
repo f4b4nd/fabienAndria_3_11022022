@@ -51,30 +51,6 @@ h1, h2 {
   margin-bottom: 1em;
 }
 
-@-webkit-keyframes displayWithDelay {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes displayWithDelay {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes hideLoading {
   0% {
     opacity: 1;
@@ -503,8 +479,8 @@ button.btn-like:hover {
 }
 
 .loading {
-  -webkit-animation: hideLoading 3s forwards;
-          animation: hideLoading 3s forwards;
+  -webkit-animation: hideLoading 2s forwards;
+          animation: hideLoading 2s forwards;
   background-color: white;
   opacity: 0.9;
   position: fixed;
