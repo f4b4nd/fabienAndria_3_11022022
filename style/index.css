@@ -780,7 +780,7 @@ button.btn-like:hover .fa-heart {
   row-gap: 2em;
 }
 
-.restaurant-menu__content .menu-container:first-child .cards card:first-child {
+.restaurant-menu__content .menu-container:first-child .cards .card:first-child {
   -webkit-animation: cardMenuDisplay 0.3s linear;
           animation: cardMenuDisplay 0.3s linear;
 }

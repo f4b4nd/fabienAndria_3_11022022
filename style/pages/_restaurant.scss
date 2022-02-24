@@ -77,7 +77,7 @@
     .menu-container:first-child .cards {
 
         // animation : card apparition + translation
-        card:first-child {
+        .card:first-child {
             @include cardMenuDelayedDisplay(0.3s);
         }
         .card:nth-child(2) {
