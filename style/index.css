@@ -256,8 +256,8 @@ button.btn-like .fa-heart:first-child {
 button.btn-like .fa-heart:last-child {
   color: black;
   font-size: 2.4em !important;
-  -webkit-transform: translateX(0.08em);
-          transform: translateX(0.08em);
+  -webkit-transform: translateX(0.09em);
+          transform: translateX(0.09em);
 }
 
 button.btn-like:hover .fa-heart {
@@ -515,8 +515,8 @@ button.btn-like:hover .fa-heart {
 }
 
 .loading {
-  -webkit-animation: hideLoading 0s forwards;
-          animation: hideLoading 0s forwards;
+  -webkit-animation: hideLoading 2s forwards;
+          animation: hideLoading 2s forwards;
   background-color: white;
   opacity: 0.9;
   position: fixed;
