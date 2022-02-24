@@ -260,8 +260,10 @@ button.btn-like .fa-heart:last-child {
           transform: translateX(0.08em);
 }
 
-button.btn-like:hover {
+button.btn-like:hover .fa-heart {
   color: #FF79DA;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .card-howitworks {
@@ -731,10 +733,6 @@ button.btn-like:hover {
 
 .restaurant-menu__header button {
   margin: 0;
-}
-
-.restaurant-menu__header .fa-heart {
-  font-size: 3em;
 }
 
 .restaurant-menu__validation {

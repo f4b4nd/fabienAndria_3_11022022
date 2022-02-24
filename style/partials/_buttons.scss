@@ -22,9 +22,6 @@ button.btn-like {
     transform: color;
     transform-origin: bottom;
 
-    // border: 1px solid black;
-    //height: 50px;
-    //width: 50px;
     position: relative;
 
     .fa-heart {
@@ -47,7 +44,11 @@ button.btn-like {
     }
     
     &:hover {
-        color: $pink;
+
+        .fa-heart {
+            color: $pink;
+            transition: color 0.5s;
+        }
     }
 
 }
