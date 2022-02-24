@@ -405,6 +405,7 @@ button.btn-like:hover .fa-heart {
   background-color: white;
   overflow: hidden;
   padding-left: 1em;
+  cursor: pointer;
 }
 
 .card-restaurant-menu .card__body {
