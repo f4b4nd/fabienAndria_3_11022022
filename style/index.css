@@ -84,8 +84,8 @@ h1, h2 {
 @-webkit-keyframes cardMenuDisplay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   90% {
     opacity: 0.1;
@@ -98,8 +98,8 @@ h1, h2 {
 @keyframes cardMenuDisplay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   90% {
     opacity: 0.1;
