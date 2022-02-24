@@ -13,3 +13,9 @@
 @mixin cardMenuDelayedDisplay($delay) {
     animation: cardMenuDisplay $delay linear;
 }
+
+@keyframes rotateCoche {
+    0% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+

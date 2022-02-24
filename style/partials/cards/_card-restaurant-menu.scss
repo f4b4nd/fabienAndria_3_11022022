@@ -58,7 +58,7 @@
 
         .fa-circle-check {
             color: white;
-            font-size: 1.5em;
+            font-size: 2em;
         }
 
     }
@@ -69,13 +69,13 @@
             width: 0;
         }
         &:hover .card__validation {
-            width: 15%;        
+            width: 15%;
+        }
+        &:hover .fa-circle-check {
+            animation: rotateCoche 1s linear;
         }
     }
 
-
-    
-  
 
     // text-overflow with 3 dots
     .card__text {
