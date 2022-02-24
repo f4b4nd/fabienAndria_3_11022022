@@ -73,19 +73,7 @@
         }
     }
 
-    // animation : width growing
-    &:first-child {
-        @include widthGrowingAnimation(2s);
-    }
-    &:nth-child(2n) {
-        @include widthGrowingAnimation(3s);
-    }
-    &:nth-child(3) {
-        @include widthGrowingAnimation(4s);
-    }
-    &:nth-child(4) {
-        @include widthGrowingAnimation(5s);
-    }
+
     
   
 

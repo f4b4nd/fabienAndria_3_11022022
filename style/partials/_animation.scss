@@ -4,11 +4,12 @@
     100% { opacity: 0; z-index: -1; }
 }
 
-@keyframes widthGrowingDisplay {
-    0% { opacity: 0; width: 35%;}
-    100% { opacity: 1;  width: 100%;}
+@keyframes cardMenuDisplay {
+    0% { opacity: 0; transform: translateY(-20px);}
+    90% { opacity: 0.1; }
+    100% { opacity: 1; }
 }
 
-@mixin widthGrowingAnimation($delay: 0.5s) {
-    animation: widthGrowingDisplay $delay forwards;
+@mixin cardMenuDelayedDisplay($delay) {
+    animation: cardMenuDisplay $delay linear;
 }
