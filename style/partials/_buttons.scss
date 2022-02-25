@@ -29,17 +29,23 @@ button.btn-like {
         right: 10%;
         top: 50%;
         line-height: 0;
+        /*
+        background: -webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373);
+        background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        */
     }
 
     .fa-heart:first-child {
         color: white;
-        font-size: 2em !important;
+        font-size: 2em;
         z-index: 1;
     }
 
     .fa-heart:last-child {
         color: black;
-        font-size: 2.4em !important;
+        font-size: 2.4em;
         transform: translateX(0.09em);
     }
     
@@ -50,5 +56,8 @@ button.btn-like {
             transition: color 0.5s;
         }
     }
+
+
+
 
 }
