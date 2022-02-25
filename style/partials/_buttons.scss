@@ -18,30 +18,13 @@ button.btn-explore, button.btn-validation {
 
 button.btn-like {
     background-color: transparent;
-    /*transition: fill 1s;
-    transform: fill;
-    transform-origin: bottom;
-    */
+    cursor: pointer;
+
     $likeBtn-size : 3em;
     height: $likeBtn-size;
     width:  $likeBtn-size;
 
     position: relative;
-
-    transition: fill 3s;
-
-    &:hover svg path {
-        fill: url('#pink-to-violet-gradient') !important;
-    }
-
-    linearGradient {
-        stop:first-child {
-            stop-color: $pink;
-        }
-        stop:last-child {
-            stop-color: $violet;
-        }
-    }
 
     svg {
         position: absolute;
@@ -50,21 +33,46 @@ button.btn-like {
         line-height: 0;
     }
 
+    // first heart is smaller
     svg:first-child {
         height:  $likeBtn-size - 0.8em;
         transform: translateX(-0.3em) translateY(0.3em);
         z-index: 1;
-        path {
-            fill: white;
-        }
+        fill: white ;
     }
 
     svg:last-child {
         height:  $likeBtn-size - 0.2em;
-        path {
-            fill: black;
+        fill: black ;
+    }
+
+    /**COLOR ANIMATION*/
+
+    // gradient color
+    #pink-to-violet-gradient {
+        stop:first-child {
+            stop-color: $pink;
+        }
+        stop:last-child {
+            stop-color: $violet;
         }
     }
-    
+
+    // fadeIn with opacity on top heart 
+    svg:first-child path {
+        transition: opacity 1s;
+    }
+
+    // transition when hovering button
+    &:hover {
+
+        svg:first-child path {
+            opacity: 0;
+        }
+
+        svg:last-child path {
+            fill: url('#pink-to-violet-gradient');
+        }
+    }
 
 }

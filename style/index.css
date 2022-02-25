@@ -249,27 +249,11 @@ button.btn-explore:hover, button.btn-validation:hover {
 
 button.btn-like {
   background-color: transparent;
-  /*transition: fill 1s;
-    transform: fill;
-    transform-origin: bottom;
-    */
+  cursor: pointer;
   height: 3em;
   width: 3em;
   position: relative;
-  -webkit-transition: fill 3s;
-  transition: fill 3s;
-}
-
-button.btn-like:hover svg path {
-  fill: url("#pink-to-violet-gradient") !important;
-}
-
-button.btn-like linearGradient stop:first-child {
-  stop-color: #FF79DA;
-}
-
-button.btn-like linearGradient stop:last-child {
-  stop-color: #9356DC;
+  /**COLOR ANIMATION*/
 }
 
 button.btn-like svg {
@@ -284,18 +268,33 @@ button.btn-like svg:first-child {
   -webkit-transform: translateX(-0.3em) translateY(0.3em);
           transform: translateX(-0.3em) translateY(0.3em);
   z-index: 1;
-}
-
-button.btn-like svg:first-child path {
   fill: white;
 }
 
 button.btn-like svg:last-child {
   height: 2.8em;
+  fill: black;
 }
 
-button.btn-like svg:last-child path {
-  fill: black;
+button.btn-like #pink-to-violet-gradient stop:first-child {
+  stop-color: #FF79DA;
+}
+
+button.btn-like #pink-to-violet-gradient stop:last-child {
+  stop-color: #9356DC;
+}
+
+button.btn-like svg:first-child path {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+button.btn-like:hover svg:first-child path {
+  opacity: 0;
+}
+
+button.btn-like:hover svg:last-child path {
+  fill: url("#pink-to-violet-gradient");
 }
 
 .card-howitworks {
