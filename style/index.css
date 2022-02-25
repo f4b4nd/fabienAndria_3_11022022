@@ -249,45 +249,55 @@ button.btn-explore:hover, button.btn-validation:hover {
 
 button.btn-like {
   background-color: transparent;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-  -webkit-transform: color;
-          transform: color;
+  -webkit-transition: fill 1s;
+  transition: fill 1s;
+  -webkit-transform: fill;
+          transform: fill;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
+  height: 3em;
+  width: 3em;
   position: relative;
 }
 
-button.btn-like .fa-heart {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  line-height: 0;
-  /*
-        background: -webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373);
-        background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        */
+button.btn-like:hover svg path {
+  fill: url("#pink-to-violet-gradient") !important;
+  -webkit-transition: fill 1s;
+  transition: fill 1s;
 }
 
-button.btn-like .fa-heart:first-child {
-  color: white;
-  font-size: 2em;
+button.btn-like linearGradient stop:first-child {
+  stop-color: #FF79DA;
+}
+
+button.btn-like linearGradient stop:last-child {
+  stop-color: #9356DC;
+}
+
+button.btn-like svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 0;
+}
+
+button.btn-like svg:first-child {
+  height: 2.2em;
+  -webkit-transform: translateX(-0.3em) translateY(0.3em);
+          transform: translateX(-0.3em) translateY(0.3em);
   z-index: 1;
 }
 
-button.btn-like .fa-heart:last-child {
-  color: black;
-  font-size: 2.4em;
-  -webkit-transform: translateX(0.09em);
-          transform: translateX(0.09em);
+button.btn-like svg:first-child path {
+  fill: white;
 }
 
-button.btn-like:hover .fa-heart {
-  color: #FF79DA;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+button.btn-like svg:last-child {
+  height: 2.8em;
+}
+
+button.btn-like svg:last-child path {
+  fill: black;
 }
 
 .card-howitworks {

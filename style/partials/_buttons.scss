@@ -18,46 +18,52 @@ button.btn-explore, button.btn-validation {
 
 button.btn-like {
     background-color: transparent;
-    transition: color 1s;
-    transform: color;
+    transition: fill 1s;
+    transform: fill;
     transform-origin: bottom;
+    
+    $likeBtn-size : 3em;
+    height: $likeBtn-size;
+    width:  $likeBtn-size;
 
     position: relative;
 
-    .fa-heart {
-        position: absolute;
-        right: 10%;
-        top: 50%;
-        line-height: 0;
-        /*
-        background: -webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373);
-        background: radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        */
+    &:hover svg path {
+        fill: url('#pink-to-violet-gradient') !important;
+        transition: fill 1s;
     }
 
-    .fa-heart:first-child {
-        color: white;
-        font-size: 2em;
-        z-index: 1;
-    }
-
-    .fa-heart:last-child {
-        color: black;
-        font-size: 2.4em;
-        transform: translateX(0.09em);
-    }
-    
-    &:hover {
-
-        .fa-heart {
-            color: $pink;
-            transition: color 0.5s;
+    linearGradient {
+        stop:first-child {
+            stop-color: $pink;
+        }
+        stop:last-child {
+            stop-color: $violet;
         }
     }
 
+    svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 0;
+    }
 
+    svg:first-child {
+        height:  $likeBtn-size - 0.8em;
+        transform: translateX(-0.3em) translateY(0.3em);
+        z-index: 1;
+        path {
+            fill: white;
+        }
+    }
 
+    svg:last-child {
+        height:  $likeBtn-size - 0.2em;
+        path {
+            fill: black;
+        }
+    }
+    
 
 }
