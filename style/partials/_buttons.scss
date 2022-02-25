@@ -16,11 +16,11 @@ button.btn-explore, button.btn-validation {
 
 }
 
-button.btn-like {
+.btn-like {
     background-color: transparent;
     cursor: pointer;
 
-    $likeBtn-size : 3em;
+    $likeBtn-size : 2.6em;
     height: $likeBtn-size;
     width:  $likeBtn-size;
 
