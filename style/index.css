@@ -249,21 +249,19 @@ button.btn-explore:hover, button.btn-validation:hover {
 
 button.btn-like {
   background-color: transparent;
-  -webkit-transition: fill 1s;
-  transition: fill 1s;
-  -webkit-transform: fill;
-          transform: fill;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  /*transition: fill 1s;
+    transform: fill;
+    transform-origin: bottom;
+    */
   height: 3em;
   width: 3em;
   position: relative;
+  -webkit-transition: fill 3s;
+  transition: fill 3s;
 }
 
 button.btn-like:hover svg path {
   fill: url("#pink-to-violet-gradient") !important;
-  -webkit-transition: fill 1s;
-  transition: fill 1s;
 }
 
 button.btn-like linearGradient stop:first-child {

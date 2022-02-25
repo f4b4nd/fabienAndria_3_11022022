@@ -18,19 +18,20 @@ button.btn-explore, button.btn-validation {
 
 button.btn-like {
     background-color: transparent;
-    transition: fill 1s;
+    /*transition: fill 1s;
     transform: fill;
     transform-origin: bottom;
-    
+    */
     $likeBtn-size : 3em;
     height: $likeBtn-size;
     width:  $likeBtn-size;
 
     position: relative;
 
+    transition: fill 3s;
+
     &:hover svg path {
         fill: url('#pink-to-violet-gradient') !important;
-        transition: fill 1s;
     }
 
     linearGradient {
